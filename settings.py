@@ -77,7 +77,7 @@ def register_settings_handlers(bot):
         ])
         await callback_query.message.edit_media(
         InputMediaPhoto(
-          media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+          media="https://freeimage.host/i/KvoT1FR",
           caption=caption
         ),
         reply_markup=keyboard
@@ -101,7 +101,7 @@ def register_settings_handlers(bot):
         ])
         await callback_query.message.edit_media(
         InputMediaPhoto(
-          media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+          media="-https://freeimage.host/i/Kvo7UQt",
           caption=caption
         ),
         reply_markup=keyboard
@@ -119,21 +119,21 @@ def register_settings_handlers(bot):
             "**Video Title :** `{name1} [{res}p].{ext}`\n"
             "<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n"
             "**Extracted by➤**{CR}\n"
+
+            ━━━━━✦💙𝗛𝗚💙✦━━━━━━
             "✪━━━━━━━━━━━━━━━━✪\n\n\n\n"
             "**Caption Style 2**\n"
             "✪━━━━━━━★━━━━━━━✪\n"
             "**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n"
             "🎞️ **Title** : `{name1}`\n"
-            "**├── Extention :  {extension}.{ext}**\n"
+            "**├── Extention :  {@The_HarshG}.{ext}**\n"
             "**├── Resolution : [{res}]**\n"
             "<blockquote>📚 **Course : {b_name}**</blockquote>\n\n"
             "🌟 **Extracted By : {credit}**\n"
+
+            ━━━━━✦💙𝗛𝗚💙✦━━━━━━
             f"✪━━━━━━━━━━━━━━━━✪\n\n\n\n"
-            "**Caption Style 3**\n"
-            f"✪━━━━━━━★━━━━━━━✪\n"
-            "<blockquote expandable>**{str(count).zfill(3)}.** {name1} [{res}p].{ext}</blockquote>\n"
-            f"✪━━━━━━━━━━━━━━━━✪\n\n\n\n"
-            "**Send Your Caption Style /cc1 | /cc2 | /cc3**", reply_markup=keyboard)
+            "**Send Your Caption Style /cc1 | /cc2 **", reply_markup=keyboard)
         input_msg = await bot.listen(editable.chat.id)
         try:
             if input_msg.text.lower() == "/cc1":
@@ -142,9 +142,6 @@ def register_settings_handlers(bot):
             elif input_msg.text.lower() == "/cc2":
                 globals.caption = '/cc2'
                 await editable.edit(f"✅ Caption Style 2 Updated!", reply_markup=keyboard)
-            else:
-                globals.caption = input_msg.text
-                await editable.edit(f"✅ Caption Style 3 Updated!", reply_markup=keyboard)
             
         except Exception as e:
             await editable.edit(f"<b>❌ Failed to set Caption Style:</b>\n<blockquote expandable>{str(e)}</blockquote>", reply_markup=keyboard)
@@ -209,7 +206,7 @@ def register_settings_handlers(bot):
       caption = ("<b>⋅ This Feature is Not Working Yet ⋅</b>")
       await callback_query.message.edit_media(
         InputMediaPhoto(
-            media="https://envs.sh/GVI.jpg",
+            media="https://freeimage.host/i/KvoRane",
             caption=caption
         ),
         reply_markup=keyboard
@@ -229,7 +226,7 @@ def register_settings_handlers(bot):
         input_msg = await bot.listen(editable.chat.id)
         try:
             if input_msg.text.lower() == "/d":
-                globals.CR = f"{CREDIT}"
+                globals.CR = f"{ʜᴀʀꜱʜ ɢᴜʀᴊᴀʀ 🤍}"
                 await editable.edit(f"✅ Credit set to default !", reply_markup=keyboard)
             else:
                 globals.CR = input_msg.text
@@ -266,12 +263,12 @@ def register_settings_handlers(bot):
             f"✪━━━━━━━━★━━━━━━━━✪\n"
             f"👑 <b>Physics Wallah Token</b> 👑\n"
             f"✪━━━━━━━━★━━━━━━━━✪\n"
-            f"🔐 <b>Send Your PW Token</b>\n"
+            f"🔐 <b>Send Your PW Token [ please Send Token To Bot & Send Tokwn To @The_HarshG After That Bot Will Work] </b>\n"
             f"✪━━━━━━━━━━━━━━━━━━✪", reply_markup=keyboard)
         input_msg = await bot.listen(editable.chat.id)
         try:
             globals.pwtoken = input_msg.text
-            await editable.edit(f"✅ Physics Wallah Token set successfully !\n\n<blockquote expandable>`{globals.pwtoken}`</blockquote>", reply_markup=keyboard) 
+            await editable.edit(f"✅ Physics Wallah Token set successfully, **Now Send This Token To @The_HarshG** After that Click To "Back To Settings" !\n\n<blockquote expandable>`{globals.pwtoken}`</blockquote>", reply_markup=keyboard) 
         except Exception as e:
             await editable.edit(f"<b>❌ Failed to set Physics Wallah Token:</b>\n<blockquote expandable>{str(e)}</blockquote>", reply_markup=keyboard)
         finally:
@@ -343,7 +340,7 @@ def register_settings_handlers(bot):
         keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
         editable = await callback_query.message.edit(
             f"━━━━━━━━━━━⚡━━━━━━━━━━━\n"
-            f"🎥 <b>Enter Video Quality</b>\n"
+            f"🎥 <b> Video Quality Kitni Krni Hai </b>\n"
             f"━━━━━━━━━━━⚡━━━━━━━━━━━\n"
             f"🎮 `144` | `240` | `360` | `480` | `720` | `1080`\n"
             f"✔️ Send /d for default\n"
@@ -428,7 +425,7 @@ def register_settings_handlers(bot):
                 globals.caption = '/cc1'
                 globals.endfilename = '/d'
                 globals.thumb = '/d'
-                globals.CR = f"{CREDIT}"
+                globals.CR = f"{ʜᴀʀꜱʜ ɢᴜʀᴊᴀʀ 🤍}"
                 globals.cwtoken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MjQyMzg3OTEsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiJVMFZ6TkdGU2NuQlZjR3h5TkZwV09FYzBURGxOZHowOSIsImlkIjoiZEUxbmNuZFBNblJqVEROVmFWTlFWbXhRTkhoS2R6MDkiLCJmaXJzdF9uYW1lIjoiYVcxV05ITjVSemR6Vm10ak1WUlBSRkF5ZVNzM1VUMDkiLCJlbWFpbCI6Ik5Ga3hNVWhxUXpRNFJ6VlhiR0ppWTJoUk0wMVdNR0pVTlU5clJXSkRWbXRMTTBSU2FHRnhURTFTUlQwPSIsInBob25lIjoiVUhVMFZrOWFTbmQ1ZVcwd1pqUTViRzVSYVc5aGR6MDkiLCJhdmF0YXIiOiJLM1ZzY1M4elMwcDBRbmxrYms4M1JEbHZla05pVVQwOSIsInJlZmVycmFsX2NvZGUiOiJOalZFYzBkM1IyNTBSM3B3VUZWbVRtbHFRVXAwVVQwOSIsImRldmljZV90eXBlIjoiYW5kcm9pZCIsImRldmljZV92ZXJzaW9uIjoiUShBbmRyb2lkIDEwLjApIiwiZGV2aWNlX21vZGVsIjoiU2Ftc3VuZyBTTS1TOTE4QiIsInJlbW90ZV9hZGRyIjoiNTQuMjI2LjI1NS4xNjMsIDU0LjIyNi4yNTUuMTYzIn19.snDdd-PbaoC42OUhn5SJaEGxq0VzfdzO49WTmYgTx8ra_Lz66GySZykpd2SxIZCnrKR6-R10F5sUSrKATv1CDk9ruj_ltCjEkcRq8mAqAytDcEBp72-W0Z7DtGi8LdnY7Vd9Kpaf499P-y3-godolS_7ixClcYOnWxe2nSVD5C9c5HkyisrHTvf6NFAuQC_FD3TzByldbPVKK0ag1UnHRavX8MtttjshnRhv5gJs5DQWj4Ir_dkMcJ4JaVZO3z8j0OxVLjnmuaRBujT-1pavsr1CCzjTbAcBvdjUfvzEhObWfA1-Vl5Y4bUgRHhl1U-0hne4-5fF0aouyu71Y6W0eg'
                 globals.cptoken = "cptoken"
                 globals.pwtoken = "pwtoken"
