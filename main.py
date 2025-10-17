@@ -33,8 +33,8 @@ keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("🎙️ Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("⚙️ Settings", callback_data="setttings")],
             [InlineKeyboardButton("💳 Suscribation", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
-        ])      
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}")]
+             
 
 @bot.on_message(filters.command("start"))
 async def start(bot, m: Message):
@@ -47,9 +47,9 @@ async def start(bot, m: Message):
         caption = (
             f"𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n"
             f"➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n"
-            f"➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n"
+            f"➠ Can Extract Videos Or Bahut Kuch !\n\n"
             f"➠ For Guide Use button - **✨ Commands** 📖\n\n"
-            f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [{CREDIT}](tg://openmessage?user_id={OWNER}) 🦁"
+            f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [{𝗢𝘄𝗻𝗲𝗿}](tg://openmessage?user_id={OWNER}) 🦁"
         )
     else:
         caption = (
@@ -57,12 +57,12 @@ async def start(bot, m: Message):
             f"➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n"
             f"➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n"
             f"**You are currently using the free version.** 🆓\n"
-            f"**Want to get started? Press /id**\n\n"
-            f"💬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 : [{CREDIT}](tg://openmessage?user_id={OWNER}) to Get The Subscription ! 🔓\n"
+            f"** Phle Premium Buy Krle MC**\n\n"
+            f"💬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 : [{𝗢𝘄𝗻𝗲𝗿}](tg://openmessage?user_id={OWNER}) to Get The Subscription ! 🔓\n"
         )
     await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://iili.io/KuCBoV2.jpg",
+        photo="https://freeimage.host/i/KvoRane",
         caption=caption,
         reply_markup=keyboard
     )
@@ -77,13 +77,13 @@ async def back_to_main_menu(client, callback_query):
         f"➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n"
         f"➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n"
         f"╭────────⊰◆⊱────────╮\n"
-        f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [{CREDIT}](tg://openmessage?user_id={OWNER}) 💻\n"
+        f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [{**HG**}](tg://openmessage?user_id={OWNER}) 💻\n"
         f"╰────────⊰◆⊱────────╯\n"
     )
     
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://envs.sh/GVI.jpg",
+        media="https://freeimage.host/i/KvoYbHv",
         caption=caption
       ),
       reply_markup=keyboard
@@ -150,7 +150,7 @@ async def cancel_handler(client: Client, m: Message):
         print(f"User ID not in AUTH_USERS", m.chat.id)
         await bot.send_message(
             m.chat.id, 
-            f"<blockquote>__**Oopss! You are not a Premium member**__\n"
+            f"<blockquote>__**BC! premium User Nhi hai Tuu**__\n"
             f"__**Please Upgrade Your Plan**__\n"
             f"__**Send me your user id for authorization**__\n"
             f"__**Your User id** __- `{m.chat.id}`</blockquote>\n\n"
@@ -159,11 +159,11 @@ async def cancel_handler(client: Client, m: Message):
         if globals.processing_request:
             globals.cancel_requested = True
             await m.delete()
-            cancel_message = await m.reply_text("**🚦 Process cancel request received. Stopping after current process...**")
+            cancel_message = await m.reply_text("**🚦 Ruk Raha Hu is Item Ko send Krne Ke baad...**")
             await asyncio.sleep(30)  # 30 second wait
             await cancel_message.delete()
         else:
-            await m.reply_text("**⚡ No active process to cancel.**")
+            await m.reply_text("**⚡ Me already STOPPED Hu ..**")
 
 
 #=================================================================
