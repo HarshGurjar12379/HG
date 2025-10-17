@@ -12,7 +12,7 @@ def register_upgrade_handlers(bot):
       first_name = callback_query.from_user.first_name
       keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Main Menu", callback_data="back_to_main_menu")]])
       caption = (
-          f"🌟 <b>Welcome [{first_name}](tg://user?id={user_id}) in DRM Bot 🤖</b> 🌟\n\n"
+          f"🌟 <b>Welcome [{first_name}](tg://user?id={user_id}) in HG DRM Bot 🤖</b> 🌟\n\n"
           f"🔐 <b>Features You Unlock:</b>\n"
           f"━━━━━━━━━━━━━━━━━━━━━━\n"
           f"<blockquote>🎓 Classplus DRM / NDRM\n"
@@ -25,15 +25,15 @@ def register_upgrade_handlers(bot):
           f"🌐 Non-DRM + AES URLs\n"
           f"🔑 MPD Links (with valid key)</blockquote>\n"
           f"━━━━━━━━━━━━━━━━━━━━━━\n"
-          f"💎 <b>Membership - 100 INR / Month</b>\n"
+          f"💎 <b>Membership - 500 INR / Month</b>\n"
           f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
           f"📬 <b>Want to Join?</b>\n"
-          f"💬 Contact ➡️ [{CREDIT}](tg://user?id={OWNER}) to activate your access."
+          f"💬 Contact ➡️ [{HG}](tg://user?id={OWNER}) to activate your access."
       )
     
       await callback_query.message.edit_media(
         InputMediaPhoto(
-          media="https://envs.sh/GVI.jpg",
+          media="https://freeimage.host/i/Kvo7UQt",
           caption=caption
         ),
         reply_markup=keyboard
